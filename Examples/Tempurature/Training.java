@@ -1,37 +1,72 @@
-package Examples.Tempurature;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Random;
+
 
 public class Training {
 
+    /**
+     * This will create the nodes in a column
+     * @param nodes
+     * @param dataNodes
+     * @param middleNodes
+     * @return
+     */
+    public static ArrayList<Nodes> initNodes(int numNewNodes, int numPreviousNodes) {
 
-    public static void main(String[] args) {
-        try (BufferedReader br = new BufferedReader(new FileReader("trainingData.csv"))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
-                List<InputNodes> rowNodes = new ArrayList<>();
-                
-                for (String value : values) {
-                    rowNodes.add(new InputNodes(Integer.parseInt(value.trim())));
-                }
+        ArrayList<Nodes> nodes = new ArrayList<>(numNewNodes); 
+        Random rand = new Random();
 
-                // Do something with this row of nodes
-                System.out.println("Loaded row:");
-                for (InputNodes node : rowNodes) {
-                    System.out.print(node.getData() + " ");
-                }
-                System.out.println();
+        for (int i = 0; i  < numNewNodes; i++) {
+            ArrayList<Double> bias = new ArrayList<>(numPreviousNodes);
+            for (int k = 0; k < numPreviousNodes; k++) {
+                bias.add(rand.nextDouble());
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+            nodes.add(new Nodes(bias));
+        }
+        return nodes;
+    }
+
+    /**
+     * This will save the current nodes to a file
+     */
+    public static boolean saveNodes(ArrayList<ArrayList<Nodes>> nodes, String relativeFilePath) {
+
+        try {
+            FileWriter fileWriter = new FileWriter(relativeFilePath, false);
+            String concatBiases;
+
+            for (int i = 0; i < nodes.size(); i++) {
+                fileWriter.write("\n"); // used to make another column of nodes
+
+                for (int k = 0; k < nodes.get(i).size(); k++) {
+
+                    concatBiases = "";
+                    for (Double d : nodes.get(i).get(k).getBias()) {
+                        concatBiases += d + "_";
+                    }
+                    concatBiases = concatBiases.substring(0, concatBiases.length() - 1);
+
+                    fileWriter.write(" ");
+                }
+            }
+
+            fileWriter.close();
+            return true;
+        } catch (Exception e) {
+            System.err.println("Could not save to filepath: " + relativeFilePath);
+            return false;
+        }
     }
 
 
+
+    public static void main(String[] args) {
+
     
-}
+
+
+    
+    }
 }

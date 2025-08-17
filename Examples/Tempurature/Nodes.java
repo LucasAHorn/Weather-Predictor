@@ -1,31 +1,33 @@
-package Examples.Tempurature;
-
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 /**
  * This class stores rows of equations
  */
 public class Nodes {
 
-    private LinkedList<Integer> bias;
-    private int data;
+    private ArrayList<Double> bias;
+    private double val;
 
-    public Nodes(LinkedList<Integer> bias) {
+    public Nodes(ArrayList<Double> bias) {
         this.bias = bias;
     }
 
-    public void updateBias(LinkedList<Integer> bias) {
+    public void updateBias(ArrayList<Double> bias) {
         this.bias = bias;
     }
 
-    public void updateData(LinkedList<InputNodes> nodes) {
-        data = 0;
+    public ArrayList<Double> getBias() {
+        return bias;
+    }
+
+    public void updateData(ArrayList<Nodes> nodes) {
+        val = 0;
         for (int i = 0; i < nodes.size(); i++) {
-            data += nodes.get(i).getData() * bias.get(i);
+            val += nodes.get(i).getVal() * bias.get(i);
         }
     }
 
-    public int getData() {
-        return data;
+    public double getVal() {
+        return val;
     }
 }
