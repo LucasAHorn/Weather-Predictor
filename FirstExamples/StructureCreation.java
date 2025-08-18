@@ -1,3 +1,5 @@
+package FirstExamples;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -5,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class Training {
+public class StructureCreation {
 
 
     /**
@@ -94,13 +96,12 @@ public class Training {
                 }            
             }
             scnr.close();
+            return readNodes;
 
         } catch (Exception e) {
             System.err.println("Nodes could not be read from the file: " + relativeFilePath);
         }
-        
-        return readNodes;
-
+        throw new RuntimeException("nodes not read correctly");
     }
 
 
@@ -114,10 +115,14 @@ public class Training {
                 neuralNetwork.get(0).get(i).setData(Double.parseDouble(dataVals[i]));
             }
 
+            scnr.close();
+            return;
+
         } catch (Exception e) {
             System.err.println("Issue with loading data from file: " + relativeFilePath);
         }
 
+        throw new RuntimeException("data nodes not loaded properly");
     }
 
     public static ArrayList<Double> runNetwork(ArrayList<ArrayList<Nodes>> network) {
@@ -137,24 +142,57 @@ public class Training {
     }
 
 
-    public static void main(String[] args) {
+    public static ArrayList<ArrayList<Double>> getTrainingData(String dataFilePath) {
 
-        ArrayList<ArrayList<Nodes>> neuralNetwork = new ArrayList<>();
+        ArrayList<ArrayList<Double>> dataVals = new ArrayList<>();
+        ArrayList<Double> dataRow;
 
-        // // This creates nodes
-        neuralNetwork.add(initNodes(10, 0)); // data nodes
-        neuralNetwork.add(initNodes(5, 10));
-        neuralNetwork.add(initNodes(3,5));
-        neuralNetwork.add(initNodes(1,3));
-        saveNodes(neuralNetwork, "./NodeBiases/test0.txt");        
-        
-        
-        // ArrayList<ArrayList<Nodes>> neuralNetwork = readNodesFromFile("./NodeBiases/test0.txt");
+        try {
+            
+            Scanner scnr = new Scanner(new File(dataFilePath));
+            while (scnr.hasNextLine()) {
+                dataRow = new ArrayList<>();
+                String[] vals = scnr.nextLine().split(",");
+                for (String str : vals) {
+                    dataRow.add(Double.parseDouble(str));
+                }
+                dataVals.add(dataRow);
+            }
 
+            return dataVals;
 
-        fillDataNodes(neuralNetwork, "./Data/trainingData.txt");
-        
-        System.out.println(runNetwork(neuralNetwork).get(0));
-
+        } catch (Exception e) {
+            System.err.println("Failed to read file: " + dataFilePath);    
+        }
+        throw new RuntimeException("Data was not read properly");
     }
+
+    public static void updateBiases(ArrayList<ArrayList<Nodes>> network) {
+        
+    }
+
+
+    // public static void main(String[] args) {
+
+    //     ArrayList<ArrayList<Nodes>> neuralNetwork = new ArrayList<>();
+
+    //     int[] columnHeights = {10,8,8,5,1}; // This is the column heights of the network
+
+    //     neuralNetwork.add(initNodes(columnHeights[0], 0));
+
+    //     for (int i = 1; i < columnHeights.length; i++) {
+    //         neuralNetwork.add(initNodes(columnHeights[i], columnHeights[i - 1]));
+    //     }
+
+    //     saveNodes(neuralNetwork, "./NodeBiases/test0.txt");        
+        
+        
+    //     // ArrayList<ArrayList<Nodes>> neuralNetwork = readNodesFromFile("./NodeBiases/test0.txt");
+
+
+    //     fillDataNodes(neuralNetwork, "./Data/trainingData.txt");
+        
+    //     System.out.println(runNetwork(neuralNetwork).get(0));
+
+    // }
 }
