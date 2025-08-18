@@ -67,7 +67,7 @@ public class Training {
     }
 
 
-    public static ArrayList<ArrayList<Nodes>> readNodes(String relativeFilePath) {
+    public static ArrayList<ArrayList<Nodes>> readNodesFromFile(String relativeFilePath) {
 
         ArrayList<ArrayList<Nodes>> readNodes = new ArrayList<>();
         ArrayList<Nodes> column;
@@ -104,18 +104,57 @@ public class Training {
     }
 
 
+    public static void fillDataNodes(ArrayList<ArrayList<Nodes>> neuralNetwork, String relativeFilePath) {
+
+        try {
+            
+            Scanner scnr = new Scanner(new File(relativeFilePath));
+            String[] dataVals = scnr.nextLine().split(",");
+            for (int i = 0; i < dataVals.length; i++) {
+                neuralNetwork.get(0).get(i).setData(Double.parseDouble(dataVals[i]));
+            }
+
+        } catch (Exception e) {
+            System.err.println("Issue with loading data from file: " + relativeFilePath);
+        }
+
+    }
+
+    public static ArrayList<Double> runNetwork(ArrayList<ArrayList<Nodes>> network) {
+    
+        for (int i = 1; i < network.size(); i++) {
+            for (int k = 0; k < network.get(i).size(); k++) {
+                network.get(i).get(k).updateData(network.get(i - 1));
+            }
+        }
+
+        ArrayList<Double> results = new ArrayList<>();
+        for (Nodes n : network.get(network.size() - 1)) {
+            results.add(n.getVal());
+        }
+
+        return results;
+    }
+
+
     public static void main(String[] args) {
 
-        // ArrayList<ArrayList<Nodes>> neuralNetwork = new ArrayList<>();
+        ArrayList<ArrayList<Nodes>> neuralNetwork = new ArrayList<>();
 
         // // This creates nodes
-        // neuralNetwork.add(initNodes(10, 0)); // data nodes
-        // neuralNetwork.add(initNodes(5, 10));
-        // neuralNetwork.add(initNodes(1,5));
+        neuralNetwork.add(initNodes(10, 0)); // data nodes
+        neuralNetwork.add(initNodes(5, 10));
+        neuralNetwork.add(initNodes(3,5));
+        neuralNetwork.add(initNodes(1,3));
+        saveNodes(neuralNetwork, "./NodeBiases/test0.txt");        
         
-        // saveNodes(neuralNetwork, "./NodeBiases/test0.txt");
+        
+        // ArrayList<ArrayList<Nodes>> neuralNetwork = readNodesFromFile("./NodeBiases/test0.txt");
 
-        ArrayList<ArrayList<Nodes>> neuralNetwork = readNodes("./NodeBiases/test0.txt");
-        System.out.println(neuralNetwork);
+
+        fillDataNodes(neuralNetwork, "./Data/trainingData.txt");
+        
+        System.out.println(runNetwork(neuralNetwork).get(0));
+
     }
 }

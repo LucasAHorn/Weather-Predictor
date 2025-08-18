@@ -20,6 +20,10 @@ public class Nodes {
         return bias;
     }
 
+    public void setData(Double val) {
+        this.val = val;
+    }
+
     public void updateData(ArrayList<Nodes> nodes) {
         val = 0;
         for (int i = 0; i < nodes.size(); i++) {
