@@ -154,7 +154,19 @@ public class StructureCreation {
                 dataRow = new ArrayList<>();
                 String[] vals = scnr.nextLine().split(",");
                 for (String str : vals) {
-                    dataRow.add(Double.parseDouble(str));
+                    
+                    try {                        
+                        dataRow.add(Double.parseDouble(str));
+                    } catch (NumberFormatException e) {
+
+                        if (str.isEmpty()) {
+                            dataRow.add(0d);
+                        } else {
+                            System.err.println("attempted to read string: " + str);
+                        }
+                    }
+
+
                 }
                 dataVals.add(dataRow);
             }
@@ -165,6 +177,10 @@ public class StructureCreation {
             System.err.println("Failed to read file: " + dataFilePath);    
         }
         throw new RuntimeException("Data was not read properly");
+
+
+
+        // TODO: you should move the prev temp into the end of the next row (do this at runtime perchance)
     }
 
     public static void updateBiases(ArrayList<ArrayList<Nodes>> network) {
