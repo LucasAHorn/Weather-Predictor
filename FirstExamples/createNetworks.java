@@ -5,9 +5,9 @@ public class createNetworks {
     
 
     public static void main(String[] args) {
-        int[] colArr = {10, 6, 1};
+        int[] colArr = {1};
     
-        new NetworkTrainer("TempuratureBiases/model10-6.txt", "Data/weather_with_future.csv", colArr);
+        new NetworkTrainer("TempuratureBiases/model1.txt", "Data/weather_with_future.csv", colArr);
     
     }
 
