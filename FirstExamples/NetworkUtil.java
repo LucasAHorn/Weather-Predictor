@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-public class StructureCreation {
+public class NetworkUtil {
 
 
     /**
@@ -26,6 +26,9 @@ public class StructureCreation {
             ArrayList<Double> bias = new ArrayList<>(numPreviousNodes);
             for (int k = 0; k < numPreviousNodes; k++) {
                 bias.add(rand.nextDouble() * 1000);
+            }
+            if (numPreviousNodes > 0) {
+                bias.add(rand.nextDouble() * 1000); // this is to add a offset for the node
             }
             nodes.add(new Nodes(bias));
         }
@@ -104,28 +107,16 @@ public class StructureCreation {
         throw new RuntimeException("nodes not read correctly");
     }
 
-
-    public static void fillDataNodes(ArrayList<ArrayList<Nodes>> neuralNetwork, String relativeFilePath) {
-
-        try {
-            
-            Scanner scnr = new Scanner(new File(relativeFilePath));
-            String[] dataVals = scnr.nextLine().split(",");
-            for (int i = 0; i < dataVals.length; i++) {
-                neuralNetwork.get(0).get(i).setData(Double.parseDouble(dataVals[i]));
-            }
-
-            scnr.close();
-            return;
-
-        } catch (Exception e) {
-            System.err.println("Issue with loading data from file: " + relativeFilePath);
+    // This will fill the data nodes with new information from the relative file path
+    public static void fillDataNodes(ArrayList<ArrayList<Nodes>> neuralNetwork, ArrayList<Double> dataWithAnswer) {
+        for (int i = 0; i < dataWithAnswer.size() - 1; i++) {
+            neuralNetwork.get(0).get(i).setData(dataWithAnswer.get(i));
         }
-
-        throw new RuntimeException("data nodes not loaded properly");
     }
 
-    public static ArrayList<Double> runNetwork(ArrayList<ArrayList<Nodes>> network) {
+
+    // evaluates network based on data currently in nodes, returning only the first element in the last column
+    public static Double runNetwork(ArrayList<ArrayList<Nodes>> network) {
     
         for (int i = 1; i < network.size(); i++) {
             for (int k = 0; k < network.get(i).size(); k++) {
@@ -138,7 +129,7 @@ public class StructureCreation {
             results.add(n.getVal());
         }
 
-        return results;
+        return results.get(0);
     }
 
 
@@ -150,6 +141,7 @@ public class StructureCreation {
         try {
             
             Scanner scnr = new Scanner(new File(dataFilePath));
+            scnr.nextLine();
             while (scnr.hasNextLine()) {
                 dataRow = new ArrayList<>();
                 String[] vals = scnr.nextLine().split(",");
@@ -177,14 +169,38 @@ public class StructureCreation {
             System.err.println("Failed to read file: " + dataFilePath);    
         }
         throw new RuntimeException("Data was not read properly");
-
-
-
-        // TODO: you should move the prev temp into the end of the next row (do this at runtime perchance)
     }
 
-    public static void updateBiases(ArrayList<ArrayList<Nodes>> network) {
+    public static void updateBiases(ArrayList<ArrayList<Nodes>> network, double changeRate) {
         
+        ArrayList<Double> arrBias;
+
+        // TODO: use random numbers to update the vals (this can be done in the one file tho)
+        for (int i = 1; i < network.size(); i++){
+            
+            for (Nodes node : network.get(i)) {
+                arrBias = node.getBias();
+                for (int j = 0; j < arrBias.size(); j++) {
+                    
+                }
+            }
+            
+        }
+
+
+    }
+
+    // scores the network based on the data and correct answer (which is the last element of the array)
+    public static double networkGolfScore(ArrayList<ArrayList<Nodes>> network, ArrayList<ArrayList<Double>> trainingData) {
+
+        double score = Double.MIN_VALUE;
+
+        for (ArrayList<Double> dataSet : trainingData) {
+            fillDataNodes(network, dataSet);
+            score += Math.pow(Math.abs(runNetwork(network) - dataSet.get(dataSet.size() - 1)), 0.05);
+        }
+
+        return score;
     }
 
 
