@@ -79,5 +79,8 @@ public class NetworkTrainer implements Runnable {
     }
     
 
+    public ArrayList<ArrayList<Nodes>> getNetwork() {
+        return network;
+    }
 
 }

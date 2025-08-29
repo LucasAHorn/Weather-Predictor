@@ -19,12 +19,16 @@ public class CodeRunner {
         ArrayList<ArrayList<Double>> trainingData = new ArrayList<>();
         ArrayList<Double> dataRow = new ArrayList<>();
         for (int i = 0; i < 16; i++) {
-            dataRow.add(0d);
+            dataRow.add(1d);
         }
         trainingData.add(dataRow);
 
 
         NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 2, 0);
+
+        fillDataNodes(nt.getNetwork(), dataRow);
+
+        System.out.println(runNetwork(nt.getNetwork()));
 
         // System.out.println(networkGolfScore()); TODO: find out how to get the score
 

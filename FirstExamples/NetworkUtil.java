@@ -118,10 +118,28 @@ public class NetworkUtil {
     // evaluates network based on data currently in nodes, returning only the first element in the last column
     public static Double runNetwork(ArrayList<ArrayList<Nodes>> network) {
     
-        for (int i = 1; i < network.size(); i++) {
-            for (int k = 0; k < network.get(i).size(); k++) {
-                network.get(i).get(k).updateData(network.get(i - 1));
+        double runningDataVal;
+
+        for (int i = 1; i < network.size(); i++) {  // col
+            for (Nodes curNode : network.get(i)) {   // row
+                runningDataVal = 0;
+
+                for (int k = 0; k < curNode.getBias().size(); k++) {
+
+                    try {
+                        runningDataVal += curNode.getBias().get(k) * network.get(i - 1).get(k).getVal();
+                    } catch (IndexOutOfBoundsException e) {
+                        runningDataVal += curNode.getBias().get(k);
+                    }
+
+                }
+                curNode.setData(runningDataVal);
             }
+
+                // network.get(i).get(j).updateData(network.get(i - 1));
+
+                // TODO: make sure network evaluates properly
+
         }
 
         ArrayList<Double> results = new ArrayList<>();
