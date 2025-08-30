@@ -21,6 +21,7 @@ public class NetworkTrainer implements Runnable {
         this.trainingData = trainingData;
         this.numTimesToRun = numTimesToRun;
         this.variability = variability;
+        this.nodesFilePath = nodesFilePath;
     }
 
     // used to make a new network, premakes the correct amount of nodes for data (assuming that the solution col exists in data)
@@ -60,22 +61,22 @@ public class NetworkTrainer implements Runnable {
     public void run() {
 
         double lowestScore = networkGolfScore(network, trainingData);
-
-        System.out.println(lowestScore);
-        System.out.println(Double.MAX_VALUE);
+        double lastScore;
         
         for (int i = 0; i < numTimesToRun; i++) {
 
             // Then make random changes
+            updateBiases(network, variability);
             // then save if new low score
-            // then loop
 
+            lastScore = networkGolfScore(network, trainingData);
+
+            if (lowestScore > lastScore) {
+                lowestScore = lastScore;
+                System.out.println("new best score: " + lastScore);
+                saveNodes(network, nodesFilePath);
+            }
         }
-
-        // TODO: make sure there is an extra 'bias' in each node so that they can be offset
-
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'run'");
     }
     
 

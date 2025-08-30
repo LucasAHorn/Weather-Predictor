@@ -25,7 +25,7 @@ public class NetworkUtil {
         for (int i = 0; i  < numNewNodes; i++) {
             ArrayList<Double> bias = new ArrayList<>(numPreviousNodes);
             for (int k = 0; k < numPreviousNodes; k++) {
-                bias.add(rand.nextDouble() * 1000);
+                bias.add(rand.nextDouble() * 1000 * (rand.nextBoolean() ? -1 : 1));
             }
             if (numPreviousNodes > 0) {
                 bias.add(rand.nextDouble() * 1000); // this is to add a offset for the node
@@ -135,11 +135,6 @@ public class NetworkUtil {
                 }
                 curNode.setData(runningDataVal);
             }
-
-                // network.get(i).get(j).updateData(network.get(i - 1));
-
-                // TODO: make sure network evaluates properly
-
         }
 
         ArrayList<Double> results = new ArrayList<>();
@@ -189,17 +184,18 @@ public class NetworkUtil {
         throw new RuntimeException("Data was not read properly");
     }
 
-    public static void updateBiases(ArrayList<ArrayList<Nodes>> network, double changeRate) {
+    public static void updateBiases(ArrayList<ArrayList<Nodes>> network, double variability) {
         
+        Random rand = new Random();
         ArrayList<Double> arrBias;
 
-        // TODO: use random numbers to update the vals (this can be done in the one file tho)
         for (int i = 1; i < network.size(); i++){
             
             for (Nodes node : network.get(i)) {
                 arrBias = node.getBias();
                 for (int j = 0; j < arrBias.size(); j++) {
-                    
+                    // TODO: make sure that this provides a good change
+                    arrBias.set(j, arrBias.get(j) + (variability * rand.nextDouble() * (rand.nextBoolean() ? 1 : -1)));
                 }
             }
             
@@ -215,7 +211,7 @@ public class NetworkUtil {
 
         for (ArrayList<Double> dataSet : trainingData) {
             fillDataNodes(network, dataSet);
-            score += Math.pow(Math.abs(runNetwork(network) - dataSet.get(dataSet.size() - 1)), 0.05);
+            score += Math.pow(Math.abs(runNetwork(network) - dataSet.get(dataSet.size() - 1)), 0.1);
         }
 
         return score;

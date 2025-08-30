@@ -16,31 +16,26 @@ public class CodeRunner {
 
         // NetworkTrainer nt = new NetworkTrainer("TempuratureBiases/test1.txt", "Data/weather_with_future.csv", colArr);
 
-        ArrayList<ArrayList<Double>> trainingData = new ArrayList<>();
-        ArrayList<Double> dataRow = new ArrayList<>();
-        for (int i = 0; i < 16; i++) {
-            dataRow.add(1d);
+        ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_with_future.csv");
+
+
+        NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 10000, 2000000000);
+
+        Thread exampleThread = new Thread(nt);
+
+        exampleThread.run();
+
+        try {
+            exampleThread.join();
+            System.out.println("Finished");
+        } catch (Exception e) {
+            // TODO: handle exception
         }
-        trainingData.add(dataRow);
 
 
-        NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 2, 0);
+        
+        
 
-        fillDataNodes(nt.getNetwork(), dataRow);
-
-        System.out.println(runNetwork(nt.getNetwork()));
-
-        // System.out.println(networkGolfScore()); TODO: find out how to get the score
-
-        // Thread t = new Thread(nt);
-        // t.run();
-
-        // ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_with_future.csv");
-
-
-        // Thread t1 = new Thread(nt);
-        // nt.run(); 
-    
         
 
     }
