@@ -200,8 +200,6 @@ public class NetworkUtil {
             }
             
         }
-
-
     }
 
     // scores the network based on the data and correct answer (which is the last element of the array)
@@ -215,6 +213,27 @@ public class NetworkUtil {
         }
 
         return score;
+    }
+
+
+    public static ArrayList<ArrayList<Nodes>> copyNetwork(ArrayList<ArrayList<Nodes>> network) {
+
+        ArrayList<ArrayList<Nodes>> networkCopy = new ArrayList<>();
+        ArrayList<Nodes> copyCol = new ArrayList<>();
+
+        try {
+            for (ArrayList<Nodes> nodeCol : network) {
+                for (Nodes n : nodeCol) {
+                    copyCol.add((Nodes) n.clone());
+                }
+                networkCopy.add(copyCol);
+                copyCol = new ArrayList<>();
+            }
+            return networkCopy;
+            
+        } catch (Exception e) {
+            throw new RuntimeException("network could not be cloned");
+        }
     }
 
 

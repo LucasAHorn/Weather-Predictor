@@ -57,11 +57,15 @@ public class NetworkTrainer implements Runnable {
         this.variability = variability;
     }
 
+    
+
     @Override
     public void run() {
 
         double lowestScore = networkGolfScore(network, trainingData);
         double lastScore;
+
+        ArrayList<ArrayList<Nodes>> networkCopy = copyNetwork(network);
         
         for (int i = 0; i < numTimesToRun; i++) {
 
@@ -74,9 +78,12 @@ public class NetworkTrainer implements Runnable {
             if (lowestScore > lastScore) {
                 lowestScore = lastScore;
                 System.out.println("new best score: " + lastScore);
-                saveNodes(network, nodesFilePath);
+                networkCopy = copyNetwork(network);
+            } else {
+                network = copyNetwork(networkCopy);
             }
         }
+        saveNodes(networkCopy, nodesFilePath);
     }
     
 

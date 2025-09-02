@@ -19,7 +19,7 @@ public class CodeRunner {
         ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_with_future.csv");
 
 
-        NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 20000, 200000000);
+        NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 200000, 200000);
 
         Thread exampleThread = new Thread(nt);
 
@@ -32,8 +32,6 @@ public class CodeRunner {
             // TODO: handle exception
         }
 
-
-            //    TODO: Make it so that the network is reset to the most recent best network
         
 
         
