@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * This class stores rows of equations
  */
-public class Nodes {
+public class Nodes implements Cloneable {
 
     private ArrayList<Double> bias;
     private double val;
@@ -35,5 +35,17 @@ public class Nodes {
 
     public double getVal() {
         return val;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        // Start with shallow copy
+        Nodes cloned = (Nodes) super.clone();
+
+        if (this.bias != null) {
+            cloned.bias = new ArrayList<>(this.bias);
+        }
+
+        return cloned;
     }
 }
