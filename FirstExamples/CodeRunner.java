@@ -39,7 +39,7 @@ public class CodeRunner {
 //                Saving logging information into a file
             PrintStream consoleOut = System.out;
 
-            FileOutputStream fos = new FileOutputStream("output.txt", true);
+            FileOutputStream fos = new FileOutputStream("output1.txt", true);
             PrintStream fileOut = new PrintStream(fos);
 
             PrintStream teeOut = new PrintStream(new OutputStream() {

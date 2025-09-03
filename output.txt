@@ -1,0 +1,961 @@
+Best score for network 1: 5747.253720775525
+Best score for network 8-8-1: 4145.192909125196
+Best score for network 10-6-1: 4293.247145391436
+Best score for network 8-4-1: 3751.00356684278
+Best score for network 10-5-4-1: 8711.680571356665
+Best score for network 8-7-3-1: 8272.741738541092
+Best score for network 10-8-3-1: 8970.864172981757
+Best score for network 10-8-4-1: 9066.237915019952
+Best score for network 10-8-6-1: 9257.54574305397
+Finished Round Number: 0, Total networks tested: 450000
+Best score for network 1: 5747.253720775525
+Best score for network 8-8-1: 4002.4897257053212
+Best score for network 8-4-1: 3545.802773839826
+Best score for network 10-6-1: 4007.2964028446986
+Best score for network 10-5-4-1: 8699.315071339734
+Best score for network 8-7-3-1: 8272.741738541092
+Best score for network 10-8-3-1: 8655.857779124057
+Best score for network 10-8-4-1: 9039.846835814637
+Best score for network 10-8-6-1: 9257.54574305397
+Finished Round Number: 1, Total networks tested: 900000
+Best score for network 1: 5747.253720775525
+Best score for network 8-4-1: 3394.821594541108
+Best score for network 8-8-1: 3929.381188261446
+Best score for network 8-7-3-1: 7640.750029062806
+Best score for network 10-6-1: 3948.711441957342
+Best score for network 10-5-4-1: 8699.315071339734
+Best score for network 10-8-3-1: 8655.857779124057
+Best score for network 10-8-4-1: 8397.203514343231
+Best score for network 10-8-6-1: 8816.635194101766
+Finished Round Number: 2, Total networks tested: 1350000
+Best score for network 1: 5747.253720775525
+Best score for network 8-4-1: 3394.821594541108
+Best score for network 8-8-1: 3849.860966713322
+Best score for network 8-7-3-1: 7277.22536211312
+Best score for network 10-6-1: 3747.100688113787
+Best score for network 10-5-4-1: 8499.85749248143
+Best score for network 10-8-3-1: 7591.935566295631
+Best score for network 10-8-4-1: 8397.203514343231
+Best score for network 10-8-6-1: 7625.4836472156185
+Finished Round Number: 3, Total networks tested: 1800000
+Best score for network 1: 5747.253720775525
+Best score for network 8-4-1: 3162.9729081156133
+Best score for network 8-8-1: 3818.4478868162014
+Best score for network 10-6-1: 3615.2490941759925
+Best score for network 8-7-3-1: 6958.055677095603
+Best score for network 10-5-4-1: 8410.569951331929
+Best score for network 10-8-3-1: 7117.762874546161
+Best score for network 10-8-4-1: 7830.3480530236975
+Best score for network 10-8-6-1: 7126.284453172089
+Finished Round Number: 4, Total networks tested: 2250000
+Best score for network 1: 5747.1164260111445
+Best score for network 8-4-1: 2791.8823160817574
+Best score for network 8-8-1: 3676.6896529721625
+Best score for network 8-7-3-1: 6801.812513352952
+Best score for network 10-6-1: 3457.528213414072
+Best score for network 10-5-4-1: 7972.1103742781725
+Best score for network 10-8-3-1: 6184.19640809037
+Best score for network 10-8-4-1: 7425.026542862841
+Best score for network 10-8-6-1: 7126.284453172089
+Finished Round Number: 5, Total networks tested: 2700000
+Best score for network 1: 5747.1164260111445
+Best score for network 8-4-1: 2531.9126333626705
+Best score for network 8-8-1: 3591.3741223958796
+Best score for network 10-6-1: 3381.6395489536953
+Best score for network 8-7-3-1: 5591.438828802027
+Best score for network 10-5-4-1: 7563.887574492784
+Best score for network 10-8-3-1: 6159.811096475017
+Best score for network 10-8-4-1: 7121.062934333209
+Best score for network 10-8-6-1: 6760.322848249263
+Finished Round Number: 6, Total networks tested: 3150000
+Best score for network 1: 5746.910923480383
+Best score for network 8-4-1: 2490.19945224034
+Best score for network 8-8-1: 3571.873332628122
+Best score for network 8-7-3-1: 5591.438828802027
+Best score for network 10-6-1: 3345.4883145363833
+Best score for network 10-5-4-1: 7261.859170179749
+Best score for network 10-8-3-1: 4954.42477881827
+Best score for network 10-8-4-1: 7087.2843999385905
+Best score for network 10-8-6-1: 6430.011064965103
+Finished Round Number: 7, Total networks tested: 3600000
+Best score for network 1: 5746.910923480383
+Best score for network 8-4-1: 2355.8658117071095
+Best score for network 8-8-1: 3539.7566986560205
+Best score for network 10-6-1: 3332.8313595057166
+Best score for network 8-7-3-1: 5205.879893941856
+Best score for network 10-5-4-1: 7045.60100868218
+Best score for network 10-8-3-1: 4954.42477881827
+Best score for network 10-8-4-1: 7045.117788069744
+Best score for network 10-8-6-1: 6288.991776673525
+Finished Round Number: 8, Total networks tested: 4050000
+Best score for network 1: 5746.910923480383
+Best score for network 8-4-1: 2135.8039078129063
+Best score for network 8-8-1: 3535.3799549560695
+Best score for network 8-7-3-1: 5183.613206866683
+Best score for network 10-6-1: 3318.448251965995
+Best score for network 10-5-4-1: 7022.665468632891
+Best score for network 10-8-3-1: 4303.0702557429295
+Best score for network 10-8-4-1: 7045.117788069744
+Best score for network 10-8-6-1: 6042.875436325431
+Finished Round Number: 9, Total networks tested: 4500000
+Best score for network 1: 5746.575268192025
+Best score for network 8-4-1: 1957.0089861669749
+Best score for network 8-8-1: 3529.6213099370366
+Best score for network 8-7-3-1: 4724.31084977242
+Best score for network 10-6-1: 3311.612241844895
+Best score for network 10-5-4-1: 6972.344201790773
+Best score for network 10-8-3-1: 4303.0702557429295
+Best score for network 10-8-4-1: 6974.44985688658
+Best score for network 10-8-6-1: 5824.848473488281
+Finished Round Number: 10, Total networks tested: 4950000
+Best score for network 1: 5746.575268192025
+Best score for network 8-4-1: 1786.1357144732922
+Best score for network 8-8-1: 3523.0573970262244
+Best score for network 8-7-3-1: 4724.31084977242
+Best score for network 10-6-1: 3307.6304128196407
+Best score for network 10-5-4-1: 6945.077039458969
+Best score for network 10-8-3-1: 4303.0702557429295
+Best score for network 10-8-4-1: 6940.916964125311
+Best score for network 10-8-6-1: 5767.88017061073
+Finished Round Number: 11, Total networks tested: 5400000
+Best score for network 1: 5746.575268192025
+Best score for network 8-4-1: 1685.174752712897
+Best score for network 8-8-1: 3517.767235249218
+Best score for network 10-6-1: 3303.494503834887
+Best score for network 8-7-3-1: 4542.599300290109
+Best score for network 10-5-4-1: 6938.575990166632
+Best score for network 10-8-3-1: 3996.598966879277
+Best score for network 10-8-4-1: 6926.52672377905
+Best score for network 10-8-6-1: 5746.290409224611
+Finished Round Number: 12, Total networks tested: 5850000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3515.3009533136083
+Best score for network 8-7-3-1: 4431.560564111523
+Best score for network 10-6-1: 3302.5240150123063
+Best score for network 10-5-4-1: 6927.743925806798
+Best score for network 10-8-3-1: 3742.3888285259454
+Best score for network 10-8-4-1: 6917.7744487792015
+Best score for network 10-8-6-1: 5727.471424735252
+Finished Round Number: 13, Total networks tested: 6300000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3515.3009533136083
+Best score for network 10-6-1: 3302.5240150123063
+Best score for network 8-7-3-1: 4074.6686625896546
+Best score for network 10-5-4-1: 6927.743925806798
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6917.7744487792015
+Best score for network 10-8-6-1: 5709.155533754659
+Finished Round Number: 14, Total networks tested: 6750000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3515.3009533136083
+Best score for network 8-7-3-1: 3695.9919260175784
+Best score for network 10-6-1: 3302.5240150123063
+Best score for network 10-5-4-1: 6927.443179307547
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6917.7744487792015
+Best score for network 10-8-6-1: 5660.080841450359
+Finished Round Number: 15, Total networks tested: 7200000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3515.3009533136083
+Best score for network 10-6-1: 3302.260035789561
+Best score for network 8-7-3-1: 3690.377671285988
+Best score for network 10-5-4-1: 6927.059863745239
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5660.080841450359
+Finished Round Number: 16, Total networks tested: 7650000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3515.3009533136083
+Best score for network 8-7-3-1: 3690.377671285988
+Best score for network 10-6-1: 3302.260035789561
+Best score for network 10-5-4-1: 6927.059863745239
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5660.080841450359
+Finished Round Number: 17, Total networks tested: 8100000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3515.3009533136083
+Best score for network 10-6-1: 3300.421047061952
+Best score for network 8-7-3-1: 3690.377671285988
+Best score for network 10-5-4-1: 6927.059863745239
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5656.801954291599
+Finished Round Number: 18, Total networks tested: 8550000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3514.1290885157905
+Best score for network 8-7-3-1: 3690.377671285988
+Best score for network 10-6-1: 3299.7438345501137
+Best score for network 10-5-4-1: 6924.681362605518
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5648.643176596054
+Finished Round Number: 19, Total networks tested: 9000000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3514.1290885157905
+Best score for network 10-6-1: 3299.7438345501137
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-5-4-1: 6924.681362605518
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5648.643176596054
+Finished Round Number: 20, Total networks tested: 9450000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3514.1290885157905
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-6-1: 3299.7438345501137
+Best score for network 10-5-4-1: 6924.681362605518
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5648.643176596054
+Finished Round Number: 21, Total networks tested: 9900000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3514.1290885157905
+Best score for network 10-6-1: 3299.7438345501137
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-5-4-1: 6924.681362605518
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5648.492318124715
+Finished Round Number: 22, Total networks tested: 10350000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-6-1: 3299.7438345501137
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5648.492318124715
+Finished Round Number: 23, Total networks tested: 10800000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3299.7438345501137
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5645.48726568475
+Finished Round Number: 24, Total networks tested: 11250000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-6-1: 3299.7438345501137
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5645.48726568475
+Finished Round Number: 25, Total networks tested: 11700000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-6-1: 3299.7438345501137
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 26, Total networks tested: 12150000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 27, Total networks tested: 12600000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 28, Total networks tested: 13050000
+Best score for network 1: 5746.520839725767
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 29, Total networks tested: 13500000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6912.055002334117
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 30, Total networks tested: 13950000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3674.195017484583
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 31, Total networks tested: 14400000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3668.325264279437
+Best score for network 10-5-4-1: 6919.437413538217
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 32, Total networks tested: 14850000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6915.96211045651
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 33, Total networks tested: 15300000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6915.96211045651
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 34, Total networks tested: 15750000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6915.96211045651
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 35, Total networks tested: 16200000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6915.936055083341
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 36, Total networks tested: 16650000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6915.936055083341
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 37, Total networks tested: 17100000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 38, Total networks tested: 17550000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 39, Total networks tested: 18000000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 40, Total networks tested: 18450000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 41, Total networks tested: 18900000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 42, Total networks tested: 19350000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 43, Total networks tested: 19800000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 44, Total networks tested: 20250000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 45, Total networks tested: 20700000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6910.3927769497395
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 46, Total networks tested: 21150000
+Best score for network 1: 5746.466455661732
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6909.707530356317
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 47, Total networks tested: 21600000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6909.707530356317
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 48, Total networks tested: 22050000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6909.707530356317
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 49, Total networks tested: 22500000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3416.2602202395024
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6909.707530356317
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 50, Total networks tested: 22950000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6909.707530356317
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 51, Total networks tested: 23400000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6909.707530356317
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 52, Total networks tested: 23850000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6909.707530356317
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 53, Total networks tested: 24300000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 54, Total networks tested: 24750000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 55, Total networks tested: 25200000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5635.385111665484
+Finished Round Number: 56, Total networks tested: 25650000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5633.542598535903
+Finished Round Number: 57, Total networks tested: 26100000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5633.542598535903
+Finished Round Number: 58, Total networks tested: 26550000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5632.130349123653
+Finished Round Number: 59, Total networks tested: 27000000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3513.016548779525
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5632.130349123653
+Finished Round Number: 60, Total networks tested: 27450000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5632.130349123653
+Finished Round Number: 61, Total networks tested: 27900000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3298.369138014889
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 62, Total networks tested: 28350000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 63, Total networks tested: 28800000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 64, Total networks tested: 29250000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 65, Total networks tested: 29700000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6907.8249146514145
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 66, Total networks tested: 30150000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 67, Total networks tested: 30600000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 68, Total networks tested: 31050000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 69, Total networks tested: 31500000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 70, Total networks tested: 31950000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 71, Total networks tested: 32400000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 72, Total networks tested: 32850000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5621.977643856981
+Finished Round Number: 73, Total networks tested: 33300000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5619.937877381129
+Finished Round Number: 74, Total networks tested: 33750000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5619.937877381129
+Finished Round Number: 75, Total networks tested: 34200000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5619.937877381129
+Finished Round Number: 76, Total networks tested: 34650000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5619.937877381129
+Finished Round Number: 77, Total networks tested: 35100000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5619.937877381129
+Finished Round Number: 78, Total networks tested: 35550000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5616.048421655144
+Finished Round Number: 79, Total networks tested: 36000000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5616.048421655144
+Finished Round Number: 80, Total networks tested: 36450000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5616.048421655144
+Finished Round Number: 81, Total networks tested: 36900000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5616.048421655144
+Finished Round Number: 82, Total networks tested: 37350000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5616.048421655144
+Finished Round Number: 83, Total networks tested: 37800000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6910.1266378094315
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5613.665834746298
+Finished Round Number: 84, Total networks tested: 38250000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5613.665834746298
+Finished Round Number: 85, Total networks tested: 38700000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5613.665834746298
+Finished Round Number: 86, Total networks tested: 39150000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3277.9706699138833
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5613.665834746298
+Finished Round Number: 87, Total networks tested: 39600000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3297.0251564489167
+Best score for network 8-7-3-1: 3213.4725661345524
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5613.665834746298
+Finished Round Number: 88, Total networks tested: 40050000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5609.182681338448
+Finished Round Number: 89, Total networks tested: 40500000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 90, Total networks tested: 40950000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 91, Total networks tested: 41400000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 92, Total networks tested: 41850000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 93, Total networks tested: 42300000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 94, Total networks tested: 42750000
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 95, Total networks tested: 43200000
+Best score for network 1: 5746.448661088382
