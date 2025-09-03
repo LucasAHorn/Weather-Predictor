@@ -2,6 +2,10 @@ package FirstExamples;
 
 import static FirstExamples.NetworkUtil.*;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 
 public class CodeRunner {
@@ -30,7 +34,33 @@ public class CodeRunner {
 
         try {
             System.out.println("Start");
+
+
+//                Saving logging information into a file
+            PrintStream consoleOut = System.out;
+
+            FileOutputStream fos = new FileOutputStream("output.txt", true);
+            PrintStream fileOut = new PrintStream(fos);
+
+            PrintStream teeOut = new PrintStream(new OutputStream() {
+                @Override
+                public void write(int b) throws IOException {
+                    consoleOut.write(b);
+                    fileOut.write(b);
+                }
+
+                @Override
+                public void flush() throws IOException {
+                    consoleOut.flush();
+                    fileOut.flush();
+                }
+            }, true);
+
+            System.setOut(teeOut);
+
+
             while (true) {
+
                 Thread[] threads = new Thread[networkTrainers.length];
                 for (int i = 0; i < networkTrainers.length; i++) {
                     threads[i] = new Thread(networkTrainers[i]);
@@ -45,7 +75,7 @@ public class CodeRunner {
                     nTrainer.setVariability(Math.max(3, nTrainer.getVariability() / 2));
                 }
                 
-                System.out.println("Finished Round Number: " + roundNum++ + "\nTotal networks tested: " + roundNum * 9 * 50000);
+                System.out.println("Finished Round Number: " + roundNum++ + ", Total networks tested: " + roundNum * 9 * 50000);
             }
         } catch (Exception e) {
             e.printStackTrace();
