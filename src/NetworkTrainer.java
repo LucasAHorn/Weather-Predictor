@@ -15,6 +15,7 @@ public class NetworkTrainer implements Runnable {
     private double bestScore = Double.MAX_VALUE;    // note that this is a 'golf' score (lower is better)
     private ArrayList<ArrayList<Nodes>> network;
     private ArrayList<ArrayList<Double>> trainingData;
+    private Boolean contineRunning = true;
 
     // used to get already made networks
     public NetworkTrainer(String nodesFilePath, ArrayList<ArrayList<Double>> trainingData, int AttemptsPerRound, int variability, double varaibilityChange) {
@@ -63,7 +64,13 @@ public class NetworkTrainer implements Runnable {
         return variability;
     }
 
-    public ArrayList<ArrayList<Nodes>> getNetwork() {return network;}
+    public ArrayList<ArrayList<Nodes>> getNetwork() {
+        return network;
+    }
+
+    public void stop() {
+        contineRunning = false;
+    }
 
     @Override
     public void run() {
@@ -73,9 +80,9 @@ public class NetworkTrainer implements Runnable {
 
         ArrayList<ArrayList<Nodes>> networkCopy = copyNetwork(network);
 
-        while (true) {
+        while (contineRunning) {
 
-            for (int i = 0; i < AttemptsPerRound; i++) {
+            for (int i = 0; i < AttemptsPerRound && contineRunning; i++) {
 
                 // Then make random changes
                 updateBiases(network, variability);
