@@ -2,44 +2,33 @@ package src;
 
 import static src.NetworkUtil.*;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.PrintStream;
+import java.io.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class CodeRunner {
 
+    public static ArrayList<String> getRelativeFilePaths(String relativeDirPath) {
+        ArrayList<String> fileList = new ArrayList<>();
+        for (File f : new File(relativeDirPath).listFiles()) {
+            fileList.add(relativeDirPath + "/" + f.getName());
+        }
+        return fileList;
+    }
+
     public static void main(String[] args) {
-        System.out.println("Init trainers");
 
+        System.out.println("Running");
 
-        // NetworkTrainer nt = new NetworkTrainer("TempuratureBiases/test1.txt", "Data/weather_with_future.csv", colArr);
-
-        ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_with_future.csv");
-
-        NetworkTrainer[] networkTrainers = {
-            new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 1000000, 1000),
-            new NetworkTrainer("./TempuratureBiases/model8-4.txt", trainingData, 100000, 1000),
-            new NetworkTrainer("./TempuratureBiases/model8-7-3.txt", trainingData, 100000, 1000),
-            new NetworkTrainer("./TempuratureBiases/model8-8.txt", trainingData, 100000, 1000),
-            new NetworkTrainer("./TempuratureBiases/model10-5-4.txt", trainingData, 100000, 1000),
-            new NetworkTrainer("./TempuratureBiases/model10-6.txt", trainingData, 100000, 1000),
-            new NetworkTrainer("./TempuratureBiases/model10-8-3.txt", trainingData, 100000, 1000),
-            new NetworkTrainer("./TempuratureBiases/model10-8-4.txt", trainingData, 100000, 1000),
-            new NetworkTrainer("./TempuratureBiases/model10-8-6.txt", trainingData, 100000, 1000),
-        };
-
+        ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_cleaned.csv");
+        ArrayList<String> filePaths = getRelativeFilePaths("Network_attempt_2/pc");
         int roundNum = 0;
 
         try {
-            System.out.println("Start");
-
-
 //                Saving logging information into a file
             PrintStream consoleOut = System.out;
 
-            FileOutputStream fos = new FileOutputStream("output1.txt", true);
+            FileOutputStream fos = new FileOutputStream("Network_attempt_2/PCoutput1.txt", true);
             PrintStream fileOut = new PrintStream(fos);
 
             PrintStream teeOut = new PrintStream(new OutputStream() {
@@ -58,26 +47,21 @@ public class CodeRunner {
 
             System.setOut(teeOut);
 
+            Thread[] threads = new Thread[filePaths.size()];
 
-            while (true) {
-
-                Thread[] threads = new Thread[networkTrainers.length];
-                for (int i = 0; i < networkTrainers.length; i++) {
-                    threads[i] = new Thread(networkTrainers[i]);
-                    threads[i].start();
-                }
-
-                for (Thread t : threads) {
-                    t.join();
-                }
-
-                for (NetworkTrainer nTrainer : networkTrainers) {
-                    nTrainer.setVariability(Math.max(3, nTrainer.getVariability() / 1.5));
-                }
-                
-                System.out.println("Finished Round Number: " + roundNum++ + ", Total networks tested: " + roundNum * 9 * 100000 +
-                        " variability: " + networkTrainers[0].getVariability());
+            for (int i = 0; i < filePaths.size(); i++) {
+                NetworkTrainer nt = new NetworkTrainer(filePaths.get(i), trainingData, 10, 0000, 1.5);
+                Thread t = new Thread(nt);
+                t.start();
+                threads[i] = t;
             }
+            filePaths = null;
+
+
+//            to keep the jvm alive
+            Thread.currentThread().join();
+
+
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println("There is an error within the forever loop");

@@ -18,7 +18,7 @@ public class CodeTester {
         trainingData = getTrainingData("./Data/TempTrainingData.txt");
         dataRow = trainingData.get(0);
 
-        NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 0, 0);
+        NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 0, 0, 0);
 
         fillDataNodes(nt.getNetwork(), dataRow);
 
