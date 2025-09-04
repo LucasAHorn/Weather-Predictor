@@ -19,15 +19,15 @@ public class CodeRunner {
         ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_with_future.csv");
 
         NetworkTrainer[] networkTrainers = {
-            new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 50000, 20000),
-            new NetworkTrainer("./TempuratureBiases/model8-4.txt", trainingData, 50000, 20000),
-            new NetworkTrainer("./TempuratureBiases/model8-7-3.txt", trainingData, 50000, 20000),
-            new NetworkTrainer("./TempuratureBiases/model8-8.txt", trainingData, 50000, 20000),
-            new NetworkTrainer("./TempuratureBiases/model10-5-4.txt", trainingData, 50000, 20000),
-            new NetworkTrainer("./TempuratureBiases/model10-6.txt", trainingData, 50000, 20000),
-            new NetworkTrainer("./TempuratureBiases/model10-8-3.txt", trainingData, 50000, 20000),
-            new NetworkTrainer("./TempuratureBiases/model10-8-4.txt", trainingData, 50000, 20000),
-            new NetworkTrainer("./TempuratureBiases/model10-8-6.txt", trainingData, 50000, 20000),
+            new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 1000000, 1000),
+            new NetworkTrainer("./TempuratureBiases/model8-4.txt", trainingData, 100000, 1000),
+            new NetworkTrainer("./TempuratureBiases/model8-7-3.txt", trainingData, 100000, 1000),
+            new NetworkTrainer("./TempuratureBiases/model8-8.txt", trainingData, 100000, 1000),
+            new NetworkTrainer("./TempuratureBiases/model10-5-4.txt", trainingData, 100000, 1000),
+            new NetworkTrainer("./TempuratureBiases/model10-6.txt", trainingData, 100000, 1000),
+            new NetworkTrainer("./TempuratureBiases/model10-8-3.txt", trainingData, 100000, 1000),
+            new NetworkTrainer("./TempuratureBiases/model10-8-4.txt", trainingData, 100000, 1000),
+            new NetworkTrainer("./TempuratureBiases/model10-8-6.txt", trainingData, 100000, 1000),
         };
 
         int roundNum = 0;
@@ -72,10 +72,11 @@ public class CodeRunner {
                 }
 
                 for (NetworkTrainer nTrainer : networkTrainers) {
-                    nTrainer.setVariability(Math.max(3, nTrainer.getVariability() / 2));
+                    nTrainer.setVariability(Math.max(3, nTrainer.getVariability() / 1.5));
                 }
                 
-                System.out.println("Finished Round Number: " + roundNum++ + ", Total networks tested: " + roundNum * 9 * 50000);
+                System.out.println("Finished Round Number: " + roundNum++ + ", Total networks tested: " + roundNum * 9 * 100000 +
+                        " variability: " + networkTrainers[0].getVariability());
             }
         } catch (Exception e) {
             e.printStackTrace();
