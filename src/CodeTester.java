@@ -1,8 +1,8 @@
-package FirstExamples;
+package src;
 
-import static FirstExamples.NetworkUtil.fillDataNodes;
-import static FirstExamples.NetworkUtil.getTrainingData;
-import static FirstExamples.NetworkUtil.runNetwork;
+import static src.NetworkUtil.fillDataNodes;
+import static src.NetworkUtil.getTrainingData;
+import static src.NetworkUtil.runNetwork;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ public class CodeTester {
         trainingData = getTrainingData("./Data/TempTrainingData.txt");
         dataRow = trainingData.get(0);
 
-        NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 0, 0);
+        NetworkTrainer nt = new NetworkTrainer("./TempuratureBiases/model1.txt", trainingData, 0, 0, 0);
 
         fillDataNodes(nt.getNetwork(), dataRow);
 

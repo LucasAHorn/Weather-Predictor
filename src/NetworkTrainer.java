@@ -1,26 +1,28 @@
-package FirstExamples;
+package src;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static FirstExamples.NetworkUtil.*;
+import static src.NetworkUtil.*;
 
 public class NetworkTrainer implements Runnable {
 
     private String nodesFilePath;
-    private int numTimesToRun;
+    private int AttemptsPerRound;
     private double variability;
+    private double varaibilityChange;
     private double bestScore = Double.MAX_VALUE;    // note that this is a 'golf' score (lower is better)
     private ArrayList<ArrayList<Nodes>> network;
     private ArrayList<ArrayList<Double>> trainingData;
 
     // used to get already made networks
-    public NetworkTrainer(String nodesFilePath, ArrayList<ArrayList<Double>> trainingData, int numTimesToRun, int variability) {
+    public NetworkTrainer(String nodesFilePath, ArrayList<ArrayList<Double>> trainingData, int AttemptsPerRound, int variability, double varaibilityChange) {
         network = readNodesFromFile(nodesFilePath);
         this.trainingData = trainingData;
-        this.numTimesToRun = numTimesToRun;
+        this.AttemptsPerRound = AttemptsPerRound;
         this.variability = variability;
+        this.varaibilityChange = varaibilityChange;
         this.nodesFilePath = nodesFilePath;
     }
 
@@ -32,8 +34,8 @@ public class NetworkTrainer implements Runnable {
 
         try {
             Scanner scnr = new Scanner(new File(trainingDataPath));
-            int numDataNodes = scnr.nextLine().split(",").length;
-            network.add(initNodes(numDataNodes - 1, 0));
+            int numDataNodes = scnr.nextLine().split(",").length - 1;
+            network.add(initNodes(numDataNodes, 0));
             scnr.close();
             for (int i = 0; i < nodeHeights.length; i++) {
                 if (i != 0) {
@@ -49,8 +51,8 @@ public class NetworkTrainer implements Runnable {
         }
     }
 
-    public void setNumTimesToRun(int numTimesToRun) {
-        this.numTimesToRun = numTimesToRun;
+    public void setAttemptsPerRound(int attemptsPerRound) {
+        this.AttemptsPerRound = attemptsPerRound;
     }
 
     public void setVariability(double variability) {
@@ -61,6 +63,8 @@ public class NetworkTrainer implements Runnable {
         return variability;
     }
 
+    public ArrayList<ArrayList<Nodes>> getNetwork() {return network;}
+
     @Override
     public void run() {
 
@@ -68,35 +72,33 @@ public class NetworkTrainer implements Runnable {
         double lastScore = 0;
 
         ArrayList<ArrayList<Nodes>> networkCopy = copyNetwork(network);
-        
-        for (int i = 0; i < numTimesToRun; i++) {
 
-            // Then make random changes
-            updateBiases(network, variability);
-            // then save if new low score
+        while (true) {
 
-            lastScore = networkGolfScore(network, trainingData);
+            for (int i = 0; i < AttemptsPerRound; i++) {
 
-            if (lowestScore > lastScore) {
-                lowestScore = lastScore;
-                networkCopy = copyNetwork(network);
-            } else {
-                network = copyNetwork(networkCopy);
+                // Then make random changes
+                updateBiases(network, variability);
+                // then save if new low score
+
+                lastScore = networkGolfScore(network, trainingData);
+
+                if (lowestScore > lastScore) {
+                    lowestScore = lastScore;
+                    networkCopy = copyNetwork(network);
+                } else {
+                    network = copyNetwork(networkCopy);
+                }
             }
+
+            String layoutString = "";
+            for (int i = 1; i < network.size(); i++) {
+                layoutString += network.get(i).size() + "-";
+            }
+            layoutString = layoutString.substring(0, layoutString.length() - 1);
+            System.out.println(layoutString + ", " + lowestScore);
+            saveNodes(networkCopy, nodesFilePath);
+            variability /= varaibilityChange;
         }
-
-        String layoutString = "";
-        for (int i = 1; i < network.size(); i++) {
-            layoutString += network.get(i).size() + "-";
-        }
-        layoutString = layoutString.substring(0, layoutString.length() - 1);
-        System.out.println("Best score for network " + layoutString + ": " + lowestScore);
-        saveNodes(networkCopy, nodesFilePath);
     }
-    
-
-    public ArrayList<ArrayList<Nodes>> getNetwork() {
-        return network;
-    }
-
 }

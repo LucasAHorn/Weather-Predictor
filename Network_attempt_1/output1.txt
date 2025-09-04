@@ -1,0 +1,166 @@
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 0, Total networks tested: 900000 variability: 25000.0
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 1, Total networks tested: 1800000 variability: 12500.0
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 2, Total networks tested: 2700000 variability: 6250.0
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 3, Total networks tested: 3600000 variability: 3125.0
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 4, Total networks tested: 4500000 variability: 1562.5
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 5, Total networks tested: 5400000 variability: 781.25
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3296.5234496354474
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 6, Total networks tested: 6300000 variability: 390.625
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3287.5139662967317
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 7, Total networks tested: 7200000 variability: 195.3125
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3256.4490040287683
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 8, Total networks tested: 8100000 variability: 97.65625
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3164.604209165604
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 9, Total networks tested: 9000000 variability: 48.828125
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3151.794644995224
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 10, Total networks tested: 9900000 variability: 24.4140625
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3130.5499688756604
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 11, Total networks tested: 10800000 variability: 12.20703125
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3122.4047812882095
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 12, Total networks tested: 11700000 variability: 6.103515625
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3118.524116139761
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 13, Total networks tested: 12600000 variability: 3.0517578125
+Best score for network 1: 5746.448661088382
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 10-6-1: 3118.524116139761
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 10-6-1: 3118.524116139761
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 1: 5746.448661088382
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Best score for network 10-8-6-1: 5597.813629696653
+Finished Round Number: 0, Total networks tested: 900000 variability: 666.6666666666666
+Best score for network 1: 5746.448661088382
+Best score for network 8-4-1: 1419.260198713447
+Best score for network 8-8-1: 3512.0083722008326
+Best score for network 8-7-3-1: 3156.619968585257
+Best score for network 10-5-4-1: 6903.394050704235
+Best score for network 10-6-1: 3118.524116139761
+Best score for network 10-8-6-1: 5597.813629696653
+Best score for network 10-8-3-1: 3276.3606305239073
+Best score for network 10-8-4-1: 6900.291144418612
+Finished Round Number: 1, Total networks tested: 1800000 variability: 444.4444444444444
