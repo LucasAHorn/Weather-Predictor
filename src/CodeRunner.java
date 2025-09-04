@@ -21,14 +21,14 @@ public class CodeRunner {
         System.out.println("Running");
 
         ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_cleaned.csv");
-        ArrayList<String> filePaths = getRelativeFilePaths("Network_attempt_2/pc");
+        ArrayList<String> filePaths = getRelativeFilePaths("Network_attempt_2/laptop");
         int roundNum = 0;
 
         try {
 //                Saving logging information into a file
             PrintStream consoleOut = System.out;
 
-            FileOutputStream fos = new FileOutputStream("Network_attempt_2/PCoutput1.txt", true);
+            FileOutputStream fos = new FileOutputStream("Network_attempt_2/LAPTOPoutput1.txt", true);
             PrintStream fileOut = new PrintStream(fos);
 
             PrintStream teeOut = new PrintStream(new OutputStream() {
