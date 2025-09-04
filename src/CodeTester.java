@@ -1,8 +1,8 @@
-package FirstExamples;
+package src;
 
-import static FirstExamples.NetworkUtil.fillDataNodes;
-import static FirstExamples.NetworkUtil.getTrainingData;
-import static FirstExamples.NetworkUtil.runNetwork;
+import static src.NetworkUtil.fillDataNodes;
+import static src.NetworkUtil.getTrainingData;
+import static src.NetworkUtil.runNetwork;
 
 import java.util.ArrayList;
 

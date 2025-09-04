@@ -1,6 +1,6 @@
-package FirstExamples;
+package src;
 
-import static FirstExamples.NetworkUtil.*;
+import static src.NetworkUtil.*;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

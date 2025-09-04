@@ -1,10 +1,10 @@
-package FirstExamples;
+package src;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static FirstExamples.NetworkUtil.*;
+import static src.NetworkUtil.*;
 
 public class NetworkTrainer implements Runnable {
 
@@ -32,8 +32,8 @@ public class NetworkTrainer implements Runnable {
 
         try {
             Scanner scnr = new Scanner(new File(trainingDataPath));
-            int numDataNodes = scnr.nextLine().split(",").length;
-            network.add(initNodes(numDataNodes - 1, 0));
+            int numDataNodes = scnr.nextLine().split(",").length - 1;
+            network.add(initNodes(numDataNodes, 0));
             scnr.close();
             for (int i = 0; i < nodeHeights.length; i++) {
                 if (i != 0) {
