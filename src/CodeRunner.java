@@ -3,7 +3,6 @@ package src;
 import static src.NetworkUtil.*;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class CodeRunner {
@@ -21,14 +20,14 @@ public class CodeRunner {
         System.out.println("Running");
 
         ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_cleaned.csv");
-        ArrayList<String> filePaths = getRelativeFilePaths("Network_attempt_2/laptop");
+        ArrayList<String> filePaths = getRelativeFilePaths("Network_attempt_3/laptop");
         int roundNum = 0;
 
         try {
 //                Saving logging information into a file
             PrintStream consoleOut = System.out;
 
-            FileOutputStream fos = new FileOutputStream("Network_attempt_2/LAPTOPoutput1.txt", true);
+            FileOutputStream fos = new FileOutputStream("Network_attempt_3/LAPTOPoutput1.txt", true);
             PrintStream fileOut = new PrintStream(fos);
 
             PrintStream teeOut = new PrintStream(new OutputStream() {
@@ -50,7 +49,7 @@ public class CodeRunner {
             Thread[] threads = new Thread[filePaths.size()];
 
             for (int i = 0; i < filePaths.size(); i++) {
-                NetworkTrainer nt = new NetworkTrainer(filePaths.get(i), trainingData, 100000, 50000, 1.5);
+                NetworkTrainer nt = new NetworkTrainer(filePaths.get(i), trainingData, 1_000_000, 500_000, 1.5);
                 Thread t = new Thread(nt);
                 t.start();
                 threads[i] = t;
