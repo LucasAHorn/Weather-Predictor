@@ -50,7 +50,7 @@ public class CodeRunner {
             Thread[] threads = new Thread[filePaths.size()];
 
             for (int i = 0; i < filePaths.size(); i++) {
-                NetworkTrainer nt = new NetworkTrainer(filePaths.get(i), trainingData, 10, 0000, 1.5);
+                NetworkTrainer nt = new NetworkTrainer(filePaths.get(i), trainingData, 100000, 50000, 1.5);
                 Thread t = new Thread(nt);
                 t.start();
                 threads[i] = t;
