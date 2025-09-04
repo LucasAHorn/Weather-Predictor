@@ -209,10 +209,10 @@ public class NetworkUtil {
 
         for (ArrayList<Double> dataSet : trainingData) {
             fillDataNodes(network, dataSet);
-            score += Math.pow(Math.abs(runNetwork(network) - dataSet.get(dataSet.size() - 1)), 0.1);
+            score += Math.abs(runNetwork(network) - dataSet.get(dataSet.size() - 1));
         }
 
-        return score;
+        return Math.pow(score, 0.1);
     }
 
 

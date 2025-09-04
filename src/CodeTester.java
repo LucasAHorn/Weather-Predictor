@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class CodeTester {
     public static void main(String[] args) {
     
-        int[] colArr = {1,2,3,4,5};
+        // int[] colArr = {1,2,3,4,5};
 
         // NetworkTrainer nt = new NetworkTrainer("TempuratureBiases/test1.txt", "Data/weather_with_future.csv", colArr);
 
