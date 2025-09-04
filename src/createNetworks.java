@@ -5,9 +5,16 @@ public class createNetworks {
     
 
     public static void main(String[] args) {
-        int[] colArr = {1};
+        int[] colArr = {9,1};
+
+        String modelStr = "";
+
+        for (int i = 0; i < colArr.length; i++) {
+            modelStr += colArr[i];
+            if (i < colArr.length - 1) {modelStr += "-";}
+        }
     
-        new NetworkTrainer("Network_attempt_2/model1.txt", "Data/test.csv", colArr);
+        // new NetworkTrainer("Network_attempt_2/laptop/model" + modelStr + ".txt", "Data/weather_cleaned.csv", colArr);
     
     }
 
