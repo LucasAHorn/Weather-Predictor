@@ -5,7 +5,7 @@ public class createNetworks {
     
 
     public static void main(String[] args) {
-        int[] colArr = {9,1};
+        int[] colArr = {6,4,1};
 
         String modelStr = "";
 
@@ -14,9 +14,8 @@ public class createNetworks {
             if (i < colArr.length - 1) {modelStr += "-";}
         }
     
-        // new NetworkTrainer("Network_attempt_2/laptop/model" + modelStr + ".txt", "Data/weather_cleaned.csv", colArr);
-    
+        // new NetworkTrainer("Network_attempt_3/laptop/model" + modelStr + "_v4.txt", "Data/weather_cleaned.csv", colArr);
+
+        
     }
-
-
 }
