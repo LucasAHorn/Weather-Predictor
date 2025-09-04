@@ -28,7 +28,7 @@ public class CodeRunner {
 //                Saving logging information into a file
             PrintStream consoleOut = System.out;
 
-            FileOutputStream fos = new FileOutputStream("Network_attempt_2/PCoutput1.txt", true);
+            FileOutputStream fos = new FileOutputStream("Network_attempt_2/PCoutput2.txt", true);
             PrintStream fileOut = new PrintStream(fos);
 
             PrintStream teeOut = new PrintStream(new OutputStream() {
