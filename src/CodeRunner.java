@@ -20,13 +20,13 @@ public class CodeRunner {
         System.out.println("Running");
 
         ArrayList<ArrayList<Double>> trainingData = getTrainingData("./Data/weather_cleaned.csv");
-        ArrayList<String> filePaths = getRelativeFilePaths("Network_attempt_3/laptop");
+        ArrayList<String> filePaths = getRelativeFilePaths("Network_attempt_3/pc");
 
         try {
 //                Saving logging information into a file
             PrintStream consoleOut = System.out;
             
-            FileOutputStream fos = new FileOutputStream("Network_attempt_3/LAPTOPoutput1.txt", true);
+            FileOutputStream fos = new FileOutputStream("Network_attempt_3/PCoutput1.txt", true);
             PrintStream fileOut = new PrintStream(fos);
 
             PrintStream teeOut = new PrintStream(new OutputStream() {
@@ -49,7 +49,7 @@ public class CodeRunner {
             Thread[] threads = new Thread[filePaths.size()];
 
             for (int i = 0; i < filePaths.size(); i++) {
-                networkTrainers[i] = new NetworkTrainer(filePaths.get(i), trainingData, 1_000_000, 10_000, 1.5);
+                networkTrainers[i] = new NetworkTrainer(filePaths.get(i), trainingData, 1_000_000, 10_000, 1.2);
                 Thread thread = new Thread(networkTrainers[i]);
                 thread.setPriority(Thread.MAX_PRIORITY);
                 thread.start();
@@ -69,12 +69,13 @@ public class CodeRunner {
                         Thread.currentThread().interrupt();
                     }
                 }
+                System.out.println("Shutdown Complete");
             }));
 
 //            to keep the jvm alive
-            Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
+            Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
             Thread.currentThread().join();
-
+ 
 
         } catch (Exception e) {
             e.printStackTrace();
