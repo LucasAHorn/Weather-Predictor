@@ -103,7 +103,7 @@ public class NetworkTrainer implements Runnable {
                 layoutString += network.get(i).size() + "-";
             }
             layoutString = layoutString.substring(0, layoutString.length() - 1);
-            System.out.println(layoutString + ", " + lowestScore);
+            System.out.printf("%s, %.2f\n",layoutString, lowestScore);
             saveNodes(networkCopy, nodesFilePath);
             variability /= varaibilityChange;
         }

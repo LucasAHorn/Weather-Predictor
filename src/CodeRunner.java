@@ -51,6 +51,7 @@ public class CodeRunner {
             for (int i = 0; i < filePaths.size(); i++) {
                 networkTrainers[i] = new NetworkTrainer(filePaths.get(i), trainingData, 1_000_000, 10_000, 1.5);
                 Thread thread = new Thread(networkTrainers[i]);
+                thread.setPriority(Thread.MAX_PRIORITY);
                 thread.start();
                 threads[i] = thread;
             }
@@ -71,6 +72,7 @@ public class CodeRunner {
             }));
 
 //            to keep the jvm alive
+            Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
             Thread.currentThread().join();
 
 
