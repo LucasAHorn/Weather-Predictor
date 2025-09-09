@@ -22,7 +22,7 @@ header.append("future_temp")
 for i in range(len(data) - 1):
     current_row = data[i]
     next_row = data[i + 1]
-    future_temp = next_row[4]  # temp column is index 4
+    future_temp = next_row[3]  # temp column is index 4
     current_row.append(future_temp)
 
 # Last row has no "future" temp, so leave it blank
