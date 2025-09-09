@@ -1,7 +1,7 @@
 import csv
 
-input_file = "C:/gitfiles/weather-predictor/Data/largerData/rawMixedData_jan.csv"
-output_file = "edited.csv"
+input_file = "Data\largeData\YearOfData.csv"
+output_file = "Data\largeData\edited.csv"
 
 # Read CSV into a list of rows
 with open(input_file, newline='') as csvfile:

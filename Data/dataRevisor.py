@@ -1,14 +1,14 @@
 import pandas as pd
 
 # Input and output file paths
-input_file = "Data/weather_with_future.csv"
-output_file = "Data/weather_cleaned.csv"
+input_file = "Data\largeData\YearOfData.csv"
+output_file = "Data\largeData\edited.csv"
 
 # Read CSV
 df = pd.read_csv(input_file)
 
 # Columns to drop
-cols_to_drop = ["year", "month", "day", "snow", "tsun"]
+cols_to_drop = ["year", "tsun"]
 
 # Drop them (ignore if missing just in case)
 df = df.drop(columns=cols_to_drop, errors="ignore")

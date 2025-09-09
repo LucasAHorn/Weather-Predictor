@@ -49,7 +49,7 @@ public class CodeRunner {
             Thread[] threads = new Thread[filePaths.size()];
 
             for (int i = 0; i < filePaths.size(); i++) {
-                networkTrainers[i] = new NetworkTrainer(filePaths.get(i), trainingData, 1_000_000, 10_000, 1.2);
+                networkTrainers[i] = new NetworkTrainer(filePaths.get(i), trainingData, 1_000_000, 20, 1.2);
                 Thread thread = new Thread(networkTrainers[i]);
                 thread.setPriority(Thread.MAX_PRIORITY);
                 thread.start();
