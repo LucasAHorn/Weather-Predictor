@@ -16,19 +16,28 @@ public class EvaluateNetworks {
         trainingData = getTrainingData("./Data/weather_cleaned.csv");
         dataRow = trainingData.get(0);
 
-        String dirName = "Network_attempt_2/laptop";
+        String dirName = "Network_attempt_2/pc";
 
         File[] filesToTest = new File(dirName).listFiles();
 
         for (File file : filesToTest) {
-    
-            NetworkTrainer nt = new NetworkTrainer(dirName + "/" + file.getName(), trainingData, 1, 0, 0);
-        
-            System.out.println(file.getName());
 
-            nt.run();
+            NetworkTrainer nt = new NetworkTrainer(dirName + "/" + file.getName(), trainingData, 10000, 0, 0);
+            Thread t = new Thread(nt);
+            t.start();
 
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
+            nt.stop();
         }
-        System.out.println("end");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
