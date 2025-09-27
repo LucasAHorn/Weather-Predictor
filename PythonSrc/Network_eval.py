@@ -47,7 +47,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 # TorchScript model
-model = torch.jit.load("PythonSrc/models/temp_model_0_scripted.pt", map_location=device)
+model = torch.jit.load("PythonSrc/models/model_2.pt", map_location=device)
 model.to(device)
 model.eval()
 

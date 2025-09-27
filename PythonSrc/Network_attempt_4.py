@@ -79,7 +79,7 @@ scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=50000, gamma=0.5)
 # =========================
 # 7. Training loop
 # =========================
-epochs = 200_000  # fewer epochs for mini-batch stability
+epochs = 20_000  # fewer epochs for mini-batch stability
 for epoch in range(epochs):
     model.train()
     epoch_loss = 0.0
