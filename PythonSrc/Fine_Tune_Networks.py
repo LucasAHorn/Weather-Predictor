@@ -63,8 +63,18 @@ model.train()  # set to training mode for fine-tuning
 # 6. Loss, optimizer, and scheduler
 # =========================
 criterion = nn.MSELoss()
-optimizer = optim.Adam(model.parameters(), lr=0.0001, weight_decay=1e-5)  # smaller LR for fine-tuning
-scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=10, verbose=True)
+optimizer = optim.Adam(model.parameters(), lr=0.0003, weight_decay=1e-5)  # smaller LR for fine-tuning
+scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+    optimizer,
+    mode='min', 
+    factor=0.5,
+    patience=50,
+    threshold=1e-4,   
+    threshold_mode='rel',
+    cooldown=10, 
+    min_lr=1e-8,
+    eps=1e-8
+)
 
 # =========================
 # 7. Fine-tuning loop
@@ -98,12 +108,12 @@ for epoch in range(fine_tune_epochs):
     scheduler.step(epoch_loss)
 
     if (epoch + 1) % (fine_tune_epochs // 20) == 0:
-        print(f"{int(100*(epoch+1)/fine_tune_epochs)}%, Loss: {epoch_loss:.6f}, MAE: {mae:.4f}, RMSE: {rmse:.4f}, LR: {optimizer.param_groups[0]['lr']:.6f}")
+        print(f"{int(100*(epoch+1)/fine_tune_epochs)}%, Loss: {epoch_loss:.6f}, MAE: {mae:.4f}, RMSE: {rmse:.4f}, LR: {optimizer.param_groups[0]['lr']:.9f}")
 
 # =========================
 # 8. Save fine-tuned model
 # =========================
 model.eval()
 scripted_model = torch.jit.script(model)
-scripted_model.save("PythonSrc/models/model_3_finetuned.pt")
+scripted_model.save("PythonSrc/models/retrained/model_3.pt")
 print("Fine-tuned model saved successfully!")

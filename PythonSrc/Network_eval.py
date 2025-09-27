@@ -45,7 +45,7 @@ y_tensor_norm = (y_tensor - y_mean) / (y_std + 1e-8)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-model = torch.jit.load("PythonSrc/models/best_model_5.pt", map_location=device)
+model = torch.jit.load("PythonSrc/models/best_model_5_.pt", map_location=device)
 model.to(device)
 model.eval()
 
